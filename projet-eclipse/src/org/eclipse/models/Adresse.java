@@ -1,4 +1,4 @@
-package org.eclipse.model;
+package org.eclipse.models;
 
 public class Adresse {
 	private int id;
@@ -6,8 +6,7 @@ public class Adresse {
 	private String codepostal;
 	private String ville;
 	
-	public Adresse(int id,String rue, String codepostal, String ville) {
-		super();
+	public Adresse(int id,String rue, String codepostal, String ville) {	
 		this.setId(id);
 		this.rue = rue;
 		this.codepostal = codepostal;

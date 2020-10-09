@@ -1,4 +1,4 @@
-package org.eclipse.model;
+package org.eclipse.models;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,14 +21,10 @@ public class Vendeur extends Utilisateur{
 		this.produits = produits;
 	}
 
-	@Override
+
 	public String toString() {
-		return "Vendeur [produits=" + produits + ", getId()=" + getId() + ", getUserNom()=" + getUserNom()
-				+ ", getMotDePasse()=" + getMotDePasse() + ", getAdresses()=" + getAdresses() + ", getNom()=" + getNom()
-				+ ", getPrenom()=" + getPrenom() + ", toString()=" + super.toString() + ", getClass()=" + getClass()
-				+ ", hashCode()=" + hashCode() + "]";
+		return "id=" + super.getId() + ", nom=" + super.getNom() + ", prenom=" + super.getPrenom() + ", userNom=" + super.getUserNom()
+				+ ", motDePasse=" + super.getMotDePasse() + ", adresses=" + super.getAdresses() + ", produits=" + produits+"]";
 	}
-
-
 	
 }

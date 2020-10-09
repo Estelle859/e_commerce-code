@@ -1,4 +1,4 @@
-package org.eclipse.model;
+package org.eclipse.models;
 
 import java.util.ArrayList;
 import java.util.List;

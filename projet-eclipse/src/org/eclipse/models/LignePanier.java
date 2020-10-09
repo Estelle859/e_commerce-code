@@ -1,4 +1,4 @@
-package org.eclipse.model;
+package org.eclipse.models;
 
 public class LignePanier {
 	
@@ -7,8 +7,7 @@ public class LignePanier {
 	private Produit produit;
 	private int quantiteProduit;
 	
-	public LignePanier(int id, Panier panier, Produit produit, int quantiteProduit) {
-		super();
+	public LignePanier(int id, Panier panier, Produit produit, int quantiteProduit) {	
 		this.id = id;
 		this.panier = panier;
 		this.produit = produit;

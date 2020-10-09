@@ -1,4 +1,4 @@
-package org.eclipse.model;
+package org.eclipse.models;
 
 public class LigneCommande {
 	
@@ -7,8 +7,7 @@ public class LigneCommande {
 	private Produit produit;
 	private Commande commande;
 	
-	public LigneCommande(int id, int quantiteCommande, Produit produit, Commande commande) {
-		super();
+	public LigneCommande(int id, int quantiteCommande, Produit produit, Commande commande) {	
 		this.id = id;
 		this.quantiteCommande = quantiteCommande;
 		this.produit = produit;
@@ -39,12 +38,18 @@ public class LigneCommande {
 	public void setCommande(Commande commande) {
 		this.commande = commande;
 	}
-
-	@Override
-	public String toString() {
-		return "LigneCommande [id=" + id + ", quantiteCommande=" + quantiteCommande + ", produit=" + produit
-				+ ", commande=" + commande + "]";
+	public float getPrix() {
+		//calcule de prix de prixUnitaire * quantite commande
+		float prix = produit.getPrixUnitaire()*this.quantiteCommande ;		
+		return prix;
 	}
 		
+	@Override
+	public String toString() {
+		return "LigneCommande [id-lignecommande=" + id + ",commande-id=" + commande.getId()+", quantiteCommande=" + quantiteCommande + ", produit=" 
+				+ produit.getDesignation()	+", prix=" + getPrix() +"]";
+	}
+
+
 
 }

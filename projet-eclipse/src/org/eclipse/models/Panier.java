@@ -1,4 +1,4 @@
-package org.eclipse.model;
+package org.eclipse.models;
 
 public class Panier {
 

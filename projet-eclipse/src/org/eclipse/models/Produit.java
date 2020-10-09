@@ -1,4 +1,4 @@
-package org.eclipse.model;
+package org.eclipse.models;
 
 public class Produit {
 	
@@ -14,7 +14,7 @@ public class Produit {
 	}
 
 	public Produit(int id, String designation, float prixUnitaire, int quantiteEnStock, String urlImage) {
-		super();
+	
 		this.id = id;
 		this.designation = designation;
 		this.prixUnitaire = prixUnitaire;
