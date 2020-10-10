@@ -65,8 +65,8 @@ public class Main {
 					break;
 				case 2:
 					System.out.println("Menu Vendeur");	
-					System.out.println("Tapez 1.addProduit 2.deleteProduit 3.updateProduit 4.getAllProduits 5.getProduitById 6.Quit");					
-	
+					System.out.println("Tapez 1.addProduit 2.deleteProduit 3.updateProduit 4.getAllProduits 5.getProduitById 6.Quit");			
+					System.out.println();
 					break;
 
 				default:
